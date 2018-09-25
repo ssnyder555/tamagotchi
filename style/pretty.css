@@ -1,0 +1,57 @@
+.header img {
+  position: center;
+  float: middle;
+  width: 700px;
+  height: 100px;
+  background: #555;
+  position: center;
+}
+
+.header h1 {
+  position: center
+  top: 18px;
+  left: 10px;
+}
+body {
+  background:
+     url(sweettexture.jpg)    /* image */
+     top center / 200px 200px /* position / size */
+     no-repeat                /* repeat */
+     fixed                    /* attachment */
+     padding-box              /* origin */
+     content-box              /* clip */
+     red;                     /* color */
+}
+.resize {
+    width: 400px;
+    height: auto;
+}
+
+.resize {
+    width: 300px;
+    height: auto;
+}
+.button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -104.5px; /*104.5px is half of the button's width*/
+}
+.test{
+  height:1000px;
+
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 10px;
+}
+.item {
+  background-color: #80cbc4;
+  border: 1px solid #fff;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
