@@ -14,7 +14,7 @@
 }
 body {
   background:
-     url(sweettexture.jpg)    /* image */
+
      top center / 200px 200px /* position / size */
      no-repeat                /* repeat */
      fixed                    /* attachment */

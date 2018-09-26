@@ -3,8 +3,10 @@
 
 <head>
   <link rel="stylesheet" href="style/pretty.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
   <script type="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js">
   </script>
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
   <meta charset="utf-8">
   <title>Tamagotchi</title>
@@ -32,20 +34,20 @@
       </header>
 
       <div id="col-1">
-        <button>Hunger</button>
-        <progress value="22" max="100"></progress>
+        <button class="feed">Hunger</button>
+        <progress class="Hunger" value="0" max="10"></progress>
 
       </div>
 
       <div id="col-2">
-        <button>Content</button>
-        <progress id="sleep" value="5" max="10"></progress>
+        <button class="lightOff">Sleepiness</button>
+        <progress class="Sleepiness" value="0" max="10"></progress>
 
       </div>
 
       <div id="col-3">
-        <button>Evilness</button>
-        <progress id="sleep" value="5" max="10"></progress>
+        <button class="play">Evilness</button>
+        <progress class="Evilness" value="0" max="10"></progress>
 
       </div>
 <!--
