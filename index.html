@@ -2,73 +2,63 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <meta charset="utf-8">
+  <title></title>
   <link rel="stylesheet" href="style/pretty.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-  <script type="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js">
-  </script>
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.ui.js"></script>
 
-  <meta charset="utf-8">
-  <title>Tamagotchi</title>
+  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+
 </head>
 
-<body>
-  <div>
-
-
-
-
-    <div class="header">
+  <div class="header">
       <img src="https://vignette.wikia.nocookie.net/logopedia/images/7/74/Tamagotchi%21_logo.gif/revision/latest?cb=20140710050841" alt="logo" />
   </div>
 
-      <img class="resize" src="https://img.buzzfeed.com/buzzfeed-static/static/enhanced/webdr03/2013/3/5/16/enhanced-buzz-orig-1000-1362519633-12.jpg?downsize=715:*&output-format=auto&output-quality=auto" alt="">
+  <img class="resize" src="https://img.buzzfeed.com/buzzfeed-static/static/enhanced/webdr03/2013/3/5/16/enhanced-buzz-orig-1000-1362519633-12.jpg?downsize=715:*&output-format=auto&output-quality=auto" alt="">
 
-
-      <div>
-        <div class='petName'>
-          <label for='name'>Name:</label>
-          <input type='text' id='userNameInput'>
-          <button id='monster' type='submit' name='Name'>Name your monster</button>
-          <p id='userDisplay'></p>
-        </div>
-
-        <!-- <div>
-          <h1>Game Start</h1>
-          <span id='timer'>timer: 30s</span>
-          <span id='round'>round: 1</span>
-          <button class= 'begin' type='button' name='button'>Begin</button>
-        </div> -->
-        <button class=“startButton” type=“button” name=“button”>START</button>
-
-
-
-        </header>
-
-        <div id='col-1'>
-          <button class='feed'>Hunger</button>
-          <progress class='hunger' value='5' max='10'></progress>
-
-        </div>
-
-        <div id='col-2'>
-          <button class='lightOff'>Sleepiness</button>
-          <progress class='sleepiness' value='5' max='10'></progress>
-
-        </div>
-
-        <div id='col-3'>
-          <button class='play'>Evilness</button>
-          <progress class='evilness' value='5' max='10'></progress>
-
-        </div>
-
-
-      </div>
-
+    <div id="name">
+      <h3 class="outside">Name your pet</h3>
+      <input type="text">
+      <button id="nameButton">Submit</button>
     </div>
 
+<p>Life Span</p>
+
+    <div class="metrics">
+      <p class="input" id="Age" value="0">Age</p>
+      <progress id="age" value="0" max="40"></progress>
+
+      <p class="input" id="Hunger" value="10">Hunger</p>
+      <progress id="hunger" value="5" max="10"></progress>
+
+      <p class="input" id="Energy" value="10">Energy</p>
+      <progress id="sleep" value="10" max="10"></progress>
+
+      <p class="input" id="Mood" value="10">Mood</p>
+      <progress id="mood" value="10" max="10"></progress>
+
+    </div>
+    <section class="configurations">
+      <p>Play Here:</p>
+      <button class="button" id="play">Play with your pet</button>
+      <button class="button" id="feed">Feed your pet</button>
+      <button class="button" id="lights">Turn off the lights</button>
+      <button class="button" id="pause">Pause ||</button>
+    </section>
+
+    <section class="home">
+      <div class="pet">
+      </div>
+      <div class="egg"></div>
+    </section>
+
+
+
     <script src='script/app.js'></script>
-</body>
+ </body>
 
 </html>
