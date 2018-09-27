@@ -7,7 +7,7 @@ let time = 0;
 let healthBarsMin = 0
 let healthBarsMax = 10
 let timerInterval = 5000
-//------Register name on screen after input box------
+
 
 
 //Name Functions
@@ -19,7 +19,7 @@ $('#nameButton').on('click', () => {
 
 const giveName = (inputValue) => {
   const $div = $('<div/>').addClass('greeting');
-  $div.append('<h3>' + 'Hi ' + inputValue + ' !' + '</h3>');
+  $div.append('<h3>' + 'Killer ' + inputValue + ' !' + '</h3>');
   $('.home').append($div);
 }
 // Increase your pet's age every x minutes
